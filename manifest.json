@@ -1,0 +1,20 @@
+{
+  "display": "standalone",
+  "lang": "en",
+  "name": "Bluesky",
+  "short_name": "Bluesky",
+  "start_url": "/?utm_source=web_app_manifest",
+  "theme_color": "#1083fe",
+  "related_applications": [
+    {
+      "platform": "itunes",
+      "id": "xyz.blueskyweb.app"
+    },
+    {
+      "platform": "play",
+      "url": "http://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
+      "id": "xyz.blueskyweb.app"
+    }
+  ],
+  "prefer_related_applications": true
+}
