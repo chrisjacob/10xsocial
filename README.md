@@ -6,7 +6,7 @@ This fork is hosted on GitHub Pages with a Custom Domain: [https://10x.social](h
 
 Want your own **FREE** hosted fork? *(it's fun! ...no developer environment required)*
 
-## 10 Steps to Fork & Host for FREE
+## 10 Minutes to Fork & Host for FREE
 
 1. Create an account on GitHub, login and then create a new Organization (for FREE) via [https://github.com/account/organizations/new?plan=free](https://github.com/account/organizations/new?plan=free). Note: your "Organization Name" will be used in your URL e.g. `10X Example Name` will be `https://10x-example-name.github.io`
 2. Go to [https://github.com/chrisjacob/10xsocial](https://github.com/chrisjacob/10xsocial), click the "Fork" button
