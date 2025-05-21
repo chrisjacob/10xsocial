@@ -8,20 +8,20 @@ Want your own **FREE** hosted fork? *(it's fun! ...no developer environment requ
 
 ## 10 Steps to Fork & Host for FREE
 
-1. Create an account on GitHub, login and then create a new Organization (for FREE) via [https://github.com/account/organizations/new?plan=free](https://github.com/account/organizations/new?plan=free). Note: your "Organization Name" will be used in your URL e.g. "10X Example Name" will be https://10x-example-name.github.io
-2. Go to [https://github.com/chrisjacob/10xsocial](https://github.com/chrisjacob/10xsocial), click the "Fork" button, then on the "Create a fork" page: **Owner** = select your "Organisation Name" e.g. "10X-Example-Name", then **Repository Name** = your "Organization Name".github.io e.g. "10x-example-name.github.io" (must be lower case, and any spaces are replaced with hyphens), then click "Create fork".
-3. Now on your forked repo page (e.g. [https://github.com/10X-Example-Name/10x-example-name.github.io](https://github.com/10X-Example-Name/10x-example-name.github.io)) click the "Actions" tab
-4. Click "I understand my workflows, go ahead and enable them" (FYI, the workflows are safe)
+1. Create an account on GitHub, login and then create a new Organization (for FREE) via [https://github.com/account/organizations/new?plan=free](https://github.com/account/organizations/new?plan=free). Note: your "Organization Name" will be used in your URL e.g. `10X Example Name` will be `https://10x-example-name.github.io`
+2. Go to [https://github.com/chrisjacob/10xsocial](https://github.com/chrisjacob/10xsocial), click the "Fork" button
+3. On the "Create a fork" page: **Owner** = select your "Organisation Name" e.g. `10X-Example-Name`, then **Repository Name** = your "Organization Name".github.io e.g. `10x-example-name.github.io` (must be lower case, and any spaces replaced with hyphens), then click "Create fork"
+4. Now on your forked repo page (e.g. [https://github.com/10X-Example-Name/10x-example-name.github.io](https://github.com/10X-Example-Name/10x-example-name.github.io)) click the "Actions" tab, then click "I understand my workflows, go ahead and enable them" (FYI, the workflows are safe)
 5. Click on the "Code" tab, scroll down to the "README" and click on the "Pencil" (Edit file) button 
 6. Make a minor edit to the README file (e.g. add a space character), then click the "Commit changes..." button, then "Commit changes" (the default values are fine)
 7. Click on the "Actions" tab, you should see some skipped workflows (Grey icon), and some workflows "In progress" (Yellow icon)
 8. Wait about 7 minutes for the "Build and Deploy GitHub Pages" workflow to complete successfully (Green icon)
-9. Click on the "Settings" tab, then the "Pages" sub-menu. Update fields to: **Source** = "Deploy from a branch", **Branch** = "gh-pages", **Folder** = "/ (root)", then click the "Save" button
+9. Click on the "Settings" tab, then the "Pages" sub-menu. Under "Build and deployment" update fields to: **Source** = "Deploy from a branch", **Branch** = "gh-pages", **Folder** = "/ (root)", then click the "Save" button
 10. Wait a minute then refresh the page... you should see "Your site is live at e.g. [https://10x-example-name.github.io/](https://10x-example-name.github.io/)"
 
 Congratulations you did it! Go visit your site!
 
-p.s. If your site shows the "README" file content, then wait another minute and refresh the page. If that fails, repeat steps 5 to 10. 
+p.s. If your site shows the "README" file content don't worry, wait another minute and refresh the page. If that fails, repeat steps 5 to 10. 
 
 ## (Optional) Setup a Custom Domain
 
