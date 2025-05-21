@@ -11,7 +11,7 @@ Want your own **FREE** hosted fork? *(it's fun! ...no developer environment requ
 1. Create an account on GitHub, login and then create a new Organization (for FREE) via [https://github.com/account/organizations/new?plan=free](https://github.com/account/organizations/new?plan=free). Note: your "Organization Name" will be used in your URL e.g. `10X Example Name` will be `https://10x-example-name.github.io`
 2. Go to [https://github.com/chrisjacob/10xsocial](https://github.com/chrisjacob/10xsocial), click the "Fork" button
 3. On the "Create a fork" page: **Owner** = select your "Organisation Name" e.g. `10X-Example-Name`, then **Repository Name** = your "Organization Name".github.io e.g. `10x-example-name.github.io` (must be lower case, and any spaces replaced with hyphens), then click "Create fork"
-4. Now on **your forked repository** (e.g. `https://github.com/10X-Example-Name/10x-example-name.github.io`) click the "Actions" tab, then click "I understand my workflows, go ahead and enable them" (FYI, the workflows are safe)
+4. Now on *your forked repository* (e.g. `https://github.com/10X-Example-Name/10x-example-name.github.io`) click the "Actions" tab, then click "I understand my workflows, go ahead and enable them" (FYI, the workflows are safe)
 5. Click on the "Code" tab, scroll down to the "README" and click on the "Pencil" (Edit file) button 
 6. Make a minor edit to the README file (e.g. add a space character), then click the "Commit changes..." button, then "Commit changes" (the default values are fine)
 7. Click on the "Actions" tab, you should see some skipped workflows (Grey icon), and some workflows "In progress" (Yellow icon)
@@ -25,9 +25,9 @@ p.s. If your site shows the "README" file content don't worry, wait another minu
 
 ## (Optional) Setup a Custom Domain
 
-1. Register a domain name e.g. "my-awesome-app.com" via a domain registrar e.g. [https://www.namecheap.com](https://www.namecheap.com)
+1. Register a domain name e.g. `10x-example-name.com` via a domain registrar e.g. [https://www.namecheap.com](https://www.namecheap.com)
 2. In GitHub, click on the "Settings" tab, then the "Pages" sub-menu. 
-3. Under the "Custom domain" section enter your domain e.g. "my-awesome-app.com" and click "Save"
+3. Under the "Custom domain" section enter your domain e.g. `10x-example-name.com` and click "Save"
 4. Setup your DNS: [Configure an apex domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) and [Configure the www subdomain variant](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 5. Then [Verifying your custom domain for GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
 
