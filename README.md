@@ -1,10 +1,12 @@
-# 10X Social App
+# 10X 💎 The Social Network for Startups
 
 This is a fork of the [Bluesky Social app](https://github.com/bluesky-social/social-app).
 
-This fork is hosted on GitHub Pages with a Custom Domain: [https://10x.social](https://10x.social)
+This fork is hosted on GitHub Pages with a Custom Domain: [10x.social](https://10x.social)
 
 Want your own **FREE** hosted fork? *(it's fun! ...no developer environment required)*
+
+...create your fork and help us build **Social for Startups!** *(All Tech, No Politics)*
 
 ## 10 Minutes to Fork & Host for FREE
 
@@ -35,21 +37,71 @@ p.s. if you get stuck, please [read the docs](https://docs.github.com/en/pages/c
 
 ---
 
-# TODO ...I need to update the rest of the README file.
+# Welcome friends!
 
-# Bluesky Social App
-
-Welcome friends! This is the codebase for the Bluesky Social app.
+This is the codebase for the 10X Social app.
 
 Get the app itself:
 
-- **Web: [bsky.app](https://bsky.app)**
-- **iOS: [App Store](https://apps.apple.com/us/app/bluesky-social/id6444370199)**
-- **Android: [Play Store](https://play.google.com/store/apps/details?id=xyz.blueskyweb.app)**
+- **Web: [10x.social](https://10x.social)**
+- **iOS:** ~~App Store~~ (soon)
+- **Android:** ~~Play Store~~ (soon)
+
+## Features Today
+- Progressive Web App (PWA) only, with static file hosting on GitHub Pages (`build-and-deploy-gh-pages.yml`)
+- README steps for anyone to Fork & Free Host (lowers the barrier to experimenting & contributing)
+- Some GitHub Workflows (Actions) skipped until they can be supported (e.g. iOS/Android Builds & Language Translation)
+
+### In Progress
+- Re-branding from Bluesky to 10X
+
+### Backlog
+- MVP:
+-- "10X" in main navigation (left and footer)
+-- Tab Navigation
+-- Welcome page
+-- iframes for: Focus, Openfund, NFTz, Vibehut, HeroSwap, Explorer
+- Amazon Web Services:
+-- bskyogcard: OpenGraph Cards to generate preview images for sharing posts and profiles (`build-and-push-ogcard-aws.yaml`)
+-- bskyembed: Embed Service for embeding 10X posts on other platforms (`build-and-push-embedr-aws.yaml`)
+-- bskylink: Link Handling, URL management and redirection, with CORS support for cross-origin requests (`build-and-push-link-aws.yaml`)
+-- bskyweb: Server-side rendering and static file serving for SEO (`build-and-push-bskyweb-aws.yaml`)
+- App Builds:
+-- EAS (Expo Application Services) for iOS and Android (Re-enable GitHub Workflow: `bundle-deploy-esa-update.yml`)
+-- iOS App build (`build-submit-ios.yml`)
+-- Android app build (`build-submit-android.yml`)
+-- Setup Sentry.io for application monitoring (`app.config.js`)
+- Other 10X:
+-- OAuth Signup (`username.10x.social`)
+-- Signup Email capture
+-- Record Direct Referral
+-- Record Network Referral (10 levels)
+-- Refer to Focus (for DeSo Wallet + Twitter connection)
+-- Refer to Believe (for Solana Wallet)
+-- Connect DeSo Wallet
+-- Connect Solana Wallet
+-- RSS Feeds: Startup, Build, VC, Tech, Ai
+- AI Tokens:
+-- Launch AI Tokens (Tokenomics, Owner instructions, Believer instructions)
+-- AI Reward Agent (Collect token holdings, issue rewards, post proof)
+- Other Bsky:
+-- Language Translation via Crowdin API (Re-enable GitHub Workflow: `nightly-update-source-languages.yaml`)
+-- Analytics for 10X
+
+## Philosophy
+- By default, 10x.social should very similar to the official client (until 10X builder community matures)
+  - color and branding are different to distinguish from Bsky social-app
+  - analytics are not present (to avoid confusing Bsky)
+- Opinionated features behind toggles
+- Focus on high impact, low diff size patches
+  - Specifically patches that won't require large conflicts to be resolved
+- Focus on power users (but all users are welome!)
+- Focus on Startups (Founders, Builders, VCs)
+- Focus on Tech (Ai, Web3, XR, APIs, Games, etc)
+- Focus on experiments & innovation 
 
 ## Development Resources
-
-This is a [React Native](https://reactnative.dev/) application, written in the TypeScript programming language. It builds on the `atproto` TypeScript packages (like [`@atproto/api`](https://www.npmjs.com/package/@atproto/api)), code for which is also open source, but in [a different git repository](https://github.com/bluesky-social/atproto).
+This is a [React Native](https://reactnative.dev/) application, written in the TypeScript programming language. It builds on the `atproto` TypeScript packages (like [`@atproto/api`](https://www.npmjs.com/package/@atproto/api)), code for which is also open source, but in [a different git repository](https://github.com/bluesky-social/atproto). It is regularly rebased on top of new releases of [social-app](https://github.com/bluesky-social/social-app).
 
 There is a small amount of Go language source code (in `./bskyweb/`), for a web service that returns the React Native Web application.
 
