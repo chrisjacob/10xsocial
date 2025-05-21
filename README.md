@@ -57,36 +57,43 @@ Get the app itself:
 
 ### Backlog
 - MVP:
--- "10X" in main navigation (left and footer)
--- Tab Navigation
--- Welcome page
--- iframes for: Focus, Openfund, NFTz, Vibehut, HeroSwap, Explorer
-- Amazon Web Services:
--- bskyogcard: OpenGraph Cards to generate preview images for sharing posts and profiles (`build-and-push-ogcard-aws.yaml`)
--- bskyembed: Embed Service for embeding 10X posts on other platforms (`build-and-push-embedr-aws.yaml`)
--- bskylink: Link Handling, URL management and redirection, with CORS support for cross-origin requests (`build-and-push-link-aws.yaml`)
--- bskyweb: Server-side rendering and static file serving for SEO (`build-and-push-bskyweb-aws.yaml`)
-- App Builds:
--- EAS (Expo Application Services) for iOS and Android (Re-enable GitHub Workflow: `bundle-deploy-esa-update.yml`)
--- iOS App build (`build-submit-ios.yml`)
--- Android app build (`build-submit-android.yml`)
--- Setup Sentry.io for application monitoring (`app.config.js`)
-- Other 10X:
--- OAuth Signup (`username.10x.social`)
--- Signup Email capture
--- Record Direct Referral
--- Record Network Referral (10 levels)
--- Refer to Focus (for DeSo Wallet + Twitter connection)
--- Refer to Believe (for Solana Wallet)
--- Connect DeSo Wallet
--- Connect Solana Wallet
--- RSS Feeds: Startup, Build, VC, Tech, Ai
+  - "10X" in main navigation (left and footer)
+  - Tab Navigation
+  - Welcome page
+  - iframes for: Focus, Openfund, NFTz, Vibehut, HeroSwap, Explorer
+  - iframes for: Awesome embedable PWAs/Games/Web3
+- Onboarding:
+  - OAuth Signup (`username.10x.social`)
+  - Signup Email capture
+  - Record Direct Referral
+  - Record Network Referral (10 levels)
+  - Refer to Focus (for DeSo Wallet + Twitter connection)
+  - Refer to Believe (for Solana Wallet)
+  - Connect DeSo Wallet
+  - Connect Solana Wallet
+- Content:
+  - Twitter RSS Feeds: Startup, Build, VC, Tech, Ai
+  - Bluesky Feeds
+  - Focus Feeds
+  - Twitter Starter packs (lists)
+  - Bluesky Starter Packs (lists)
+  - Focus Starter Packs (lists)
 - AI Tokens:
--- Launch AI Tokens (Tokenomics, Owner instructions, Believer instructions)
--- AI Reward Agent (Collect token holdings, issue rewards, post proof)
-- Other Bsky:
--- Language Translation via Crowdin API (Re-enable GitHub Workflow: `nightly-update-source-languages.yaml`)
--- Analytics for 10X
+  - Launch AI Tokens (Tokenomics, Owner instructions, Believer instructions)
+  - AI Reward Agent (Collect token holdings, issue rewards, post proof)
+- Amazon Web Services:
+  - bskyogcard: OpenGraph Cards to generate preview images for sharing posts and profiles (`build-and-push-ogcard-aws.yaml`)
+  - bskyembed: Embed Service for embeding 10X posts on other platforms (`build-and-push-embedr-aws.yaml`)
+  - bskylink: Link Handling, URL management and redirection, with CORS support for cross-origin requests (`build-and-push-link-aws.yaml`)
+  - bskyweb: Server-side rendering and static file serving for SEO (`build-and-push-bskyweb-aws.yaml`)
+- App Builds:
+  - EAS (Expo Application Services) for iOS and Android (Re-enable GitHub Workflow: `bundle-deploy-esa-update.yml`)
+  - iOS App build (`build-submit-ios.yml`)
+  - Android app build (`build-submit-android.yml`)
+  - Setup Sentry.io for application monitoring (`app.config.js`)
+- Other:
+  - Language Translation via Crowdin API (Re-enable GitHub Workflow: `nightly-update-source-languages.yaml`)
+  - Analytics for 10X
 
 ## Philosophy
 - By default, 10x.social should very similar to the official client (until 10X builder community matures)
