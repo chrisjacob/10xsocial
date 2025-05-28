@@ -54,6 +54,15 @@ Get the app itself:
 
 ## In Progress
 - Re-branding from Bluesky to 10X
+  - Logos
+  - Colours
+  - Brand name
+- Disabling Bluesky analytics (until we can run our own)
+- Settings Page
+  - Redirects: Outbound links redirect through go.bsky.app (enable/disable Bluesky's go links)
+  - Geolocation: configurable geolocation (default: US. Informs labelers & currency behaviour)
+  - Tweaks: On non-bsky.social handles, show a link to that URL (on users Profile page)
+  - Gates: explore_show_suggested_feeds (on the Explore page show "Discover Feeds" section)
 
 ## Backlog
 - MVP:
