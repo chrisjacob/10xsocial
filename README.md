@@ -128,33 +128,48 @@ You may wish to reference [offical resources linked in social-app](https://githu
 
 ## Contributions
 
-10X is a community fork, and we'd love to merge your PR!
+> 10X is a community fork, and we'd love to merge your PR!
 
 As a rule of thumb, the best features for 10X.social are ones that have a disproportionately positive impact on the user experience compared to the matinance overhead.
 
 Unlike some open source projects, since 10X.social is a soft fork, any features (patches) we add on top of upstream social-app need to be maintained. For example, a change to the way posts are composed may be very invasive, touching lots of code across the codebase. If upstream refactors this component, we will need to rewrite this feature to be compatible or drop it from the client.
 
-For this reason, bias towards features that change a relatively small amount of code that is present upstream.
+For this reason, try to focus on features that change a relatively small amount of code that is present upstream.
 
 Without an overriding motivation, opinionated features should exist behind a toggle that is not enabled by default. This allows 10X.social to cater to as many users as possible.
 
+**Guidelines:**
+
+- Check for existing issues before filing a new one please.
+
+- Open an issue and give some time for discussion before submitting a PR.
+
+  - This isn't strictly necessary, but I'd love to give my thoughts and scope out your willingness to maintain the feature before you write it.
+
+- Stay away from PRs like...
+
+  - Changing "Post" to "Skeet"
+
+  - Refactoring the codebase, e.g., to replace MobX with Redux or something.
+
 ## Forking guidelines
 
-You have our blessing 🪄✨ to fork this application! However, it's very important to be clear to users when you're giving them a fork.
+Just like social-app, you have our blessing 🪄✨ to fork this application! However, it's very important to be clear to users when you're giving them a fork.
 
 Please be sure to:
 
-- Change all branding in the repository and UI to clearly differentiate from Bluesky.
-- Change any support links (feedback, email, terms of service, etc) to your own systems.
-- Replace any analytics or error-collection systems with your own so we don't get super confused.
+- Change all branding in the repository and UI to clearly differentiate from 10X.
+- Change any support links (feedback, email, terms of service, issue tracker, etc) to your own systems.
+
+## Self hosting & personal builds
+
+Self hosting is great! It is our intention that 10X is easy to self host and build on your own. If you host your own instance of 10X.social, or make your own builds, please make some level of effort to clarify that it is not an "official" build or instance. This can be in the form of a different domain or branding, but can also be as simple as not advertising your hosted instance or builds as "official" releases.
 
 ## Security disclosures
 
-If you discover any security issues, please send an email to security@bsky.app. The email is automatically CCed to the entire team and we'll respond promptly.
+If you discover any security issues, please send an email to chris@10xnetworkstate.com 
 
-## Are you a developer interested in building on atproto?
-
-Bluesky is an open social network built on the AT Protocol, a flexible technology that will never lock developers out of the ecosystems that they help build. With atproto, third-party integration can be as seamless as first-party through custom feeds, federated services, clients, and more.
+If the issue pertains to infastructure, code, or systems outside the scope of 10X.social, please refer to the [disclosure guidelines on social-app](https://github.com/bluesky-social/social-app#security-disclosures) if it is hosted by Bluesky PBC. Otherwise, reference the security policy of that system as applicable.
 
 ## License (MIT)
 
@@ -162,7 +177,7 @@ See [./LICENSE](./LICENSE) for the full license.
 
 ## P.S.
 
-We ❤️ you and all of the ways you support us. Thank you for making Bluesky a great place!
+We ❤️ you and all of the ways you support us. Thank you for making 10X a great place!
 
 # Have more questions?
 
