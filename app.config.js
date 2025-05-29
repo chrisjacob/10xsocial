@@ -38,10 +38,10 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Bluesky',
-      slug: 'bluesky',
-      scheme: 'bluesky',
-      owner: 'blueskysocial',
+      name: '10X',
+      slug: '10x',
+      scheme: ['bluesky', '10x'],
+      // owner: 'blueskysocial',
       runtimeVersion: {
         policy: 'appVersion',
       },

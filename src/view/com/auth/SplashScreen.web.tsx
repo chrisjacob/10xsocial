@@ -164,7 +164,7 @@ function Footer() {
         a.flex_1,
         t.atoms.border_contrast_medium,
       ]}>
-      <InlineLinkText
+      {/* <InlineLinkText
         label={_(msg`Learn more about Bluesky`)}
         to="https://bsky.social">
         <Trans>Business</Trans>
@@ -180,6 +180,11 @@ function Footer() {
         <Trans comment="Link to a page with job openings at Bluesky">
           Jobs
         </Trans>
+      </InlineLinkText> */}
+      <InlineLinkText
+        label={_(msg`Read the patches and contribute`)}
+        to="https://github.com/chrisjacob/10xsocial">
+        <Trans>Github</Trans>
       </InlineLinkText>
 
       <View style={a.flex_1} />
