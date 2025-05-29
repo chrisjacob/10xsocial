@@ -1,8 +1,8 @@
 {
   "display": "standalone",
   "lang": "en",
-  "name": "Bluesky",
-  "short_name": "Bluesky",
+  "name": "10X",
+  "short_name": "10X",
   "start_url": "/?utm_source=web_app_manifest",
   "theme_color": "#1083fe",
   "related_applications": [
