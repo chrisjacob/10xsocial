@@ -36,6 +36,7 @@ import {AvatarStackWithFetch} from '#/components/AvatarStack'
 import {useDialogControl} from '#/components/Dialog'
 import {SwitchAccountDialog} from '#/components/dialogs/SwitchAccount'
 import {Accessibility_Stroke2_Corner2_Rounded as AccessibilityIcon} from '#/components/icons/Accessibility'
+import {Atom_Stroke2_Corner0_Rounded as TenXIcon} from '#/components/icons/Atom'
 import {BubbleInfo_Stroke2_Corner2_Rounded as BubbleInfoIcon} from '#/components/icons/BubbleInfo'
 import {ChevronTop_Stroke2_Corner0_Rounded as ChevronUpIcon} from '#/components/icons/Chevron'
 import {CircleQuestion_Stroke2_Corner2_Rounded as CircleQuestionIcon} from '#/components/icons/CircleQuestion'
@@ -160,6 +161,12 @@ export function SettingsScreen({}: Props) {
             <AddAccountRow />
           )}
           <SettingsList.Divider />
+          <SettingsList.LinkItem to="/settings/10x" label={_(msg`10X`)}>
+            <SettingsList.ItemIcon icon={TenXIcon} />
+            <SettingsList.ItemText>
+              <Trans>10X</Trans>
+            </SettingsList.ItemText>
+          </SettingsList.LinkItem>
           <SettingsList.LinkItem to="/settings/account" label={_(msg`Account`)}>
             <SettingsList.ItemIcon icon={PersonIcon} />
             <SettingsList.ItemText>
@@ -281,7 +288,7 @@ function ProfilePreview({
 }: {
   profile: AppBskyActorDefs.ProfileViewDetailed
 }) {
-  const t = useTheme()
+  const theme = useTheme()
   const {gtMobile} = useBreakpoints()
   const shadow = useProfileShadow(profile)
   const moderationOpts = useModerationOpts()
@@ -322,7 +329,7 @@ function ProfilePreview({
           numberOfLines={1}
           style={[
             a.pt_sm,
-            t.atoms.text,
+            theme.atoms.text,
             gtMobile ? a.text_4xl : a.text_3xl,
             a.font_heavy,
           ]}>
@@ -339,7 +346,8 @@ function ProfilePreview({
           </View>
         )}
       </View>
-      <Text style={[a.text_md, a.leading_snug, t.atoms.text_contrast_medium]}>
+      <Text
+        style={[a.text_md, a.leading_snug, theme.atoms.text_contrast_medium]}>
         {sanitizeHandle(profile.handle, '@')}
       </Text>
     </>
@@ -466,7 +474,7 @@ function AccountRow({
   ) => void
 }) {
   const {_} = useLingui()
-  const t = useTheme()
+  const theme = useTheme()
 
   const moderationOpts = useModerationOpts()
   const removePromptControl = Prompt.usePromptControl()
@@ -511,9 +519,10 @@ function AccountRow({
                   {top: 10, right: tokens.space.lg},
                   a.p_xs,
                   a.rounded_full,
-                  (state.hovered || state.pressed) && t.atoms.bg_contrast_25,
+                  (state.hovered || state.pressed) &&
+                    theme.atoms.bg_contrast_25,
                 ]}>
-                <DotsHorizontal size="md" style={t.atoms.text} />
+                <DotsHorizontal size="md" style={theme.atoms.text} />
               </Pressable>
             )}
           </Menu.Trigger>

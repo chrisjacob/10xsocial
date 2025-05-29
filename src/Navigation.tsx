@@ -95,6 +95,7 @@ import {NotificationSettingsScreen} from '#/screens/Settings/NotificationSetting
 import {PrivacyAndSecuritySettingsScreen} from '#/screens/Settings/PrivacyAndSecuritySettings'
 import {SettingsScreen} from '#/screens/Settings/Settings'
 import {SettingsInterests} from '#/screens/Settings/SettingsInterests'
+import {TenXSettingsScreen} from '#/screens/Settings/TenXSettings'
 import {ThreadPreferencesScreen} from '#/screens/Settings/ThreadPreferences'
 import {
   StarterPackScreen,
@@ -353,6 +354,14 @@ function commonScreens(Stack: typeof HomeTab, unreadCountLabel?: string) {
         getComponent={() => AccessibilitySettingsScreen}
         options={{
           title: title(msg`Accessibility Settings`),
+          requireAuth: true,
+        }}
+      />
+      <Stack.Screen
+        name="TenXSettings"
+        getComponent={() => TenXSettingsScreen}
+        options={{
+          title: title(msg`10X Settings`),
           requireAuth: true,
         }}
       />

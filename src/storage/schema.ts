@@ -11,6 +11,9 @@ export type Device = {
   trendingBetaEnabled: boolean
   devMode: boolean
   demoMode: boolean
+
+  // 10X
+  tenXGateCache: string
 }
 
 export type Account = {

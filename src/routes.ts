@@ -40,6 +40,7 @@ export const router = new Router({
   PreferencesThreads: '/settings/threads',
   PreferencesExternalEmbeds: '/settings/external-embeds',
   AccessibilitySettings: '/settings/accessibility',
+  TenXSettings: '/settings/10x',
   AppearanceSettings: '/settings/appearance',
   SavedFeeds: '/settings/saved-feeds',
   // new settings

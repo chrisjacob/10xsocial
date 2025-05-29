@@ -55,6 +55,7 @@ export type CommonNavigatorParams = {
   SettingsInterests: undefined
   AboutSettings: undefined
   AppIconSettings: undefined
+  TenXSettings: undefined
   Search: {q?: string}
   Hashtag: {tag: string; author?: string}
   Topic: {topic: string}
